@@ -87,3 +87,12 @@ const product5 = new ProductProperties('Soda', 3.25, 50);
 
 const store = new Store();
 
+//Stocking store
+//Products from inventory
+
+store.addProduct(product1);
+store.addProduct(product2);
+store.addProduct(product3);
+store.addProduct(product4);
+store.addProduct(product5);
+
