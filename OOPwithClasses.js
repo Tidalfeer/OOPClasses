@@ -82,6 +82,7 @@ const product2 = new ProductProperties('Banana', 1.25, 45);
 const product3 = new PerishableProductProperties('Milk', 3.75, 15, '2025-01-05');
 const product4 = new PerishableProductProperties('Yogurt', 2.50, 25, '2025-01-15');
 const product5 = new ProductProperties('Soda', 3.25, 50);
+const product6 = new ProductProperties('Gummy Bears', 3.99, 500);
 
 //New Store (part 4)
 
@@ -95,6 +96,7 @@ store.addProduct(product2);
 store.addProduct(product3);
 store.addProduct(product4);
 store.addProduct(product5);
+store.addProduct(product6);
 
 
 //Testing getTotalValue(): Returns the total value of the product in stock (price * quantity)
@@ -102,3 +104,5 @@ console.log('Total Inventory Value before Discount: $' + store.getInventoryValue
 
 //Testing applyDiscount(products, discount)
 ProductProperties.applyDiscount(store.inventory, 0.15);
+
+//Testing getTotalValue(): Returns the total value of the product in stock (price * quantity) AFTER Discount
