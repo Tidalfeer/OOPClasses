@@ -49,10 +49,17 @@ class Store {
     constructor() {
         this.inventory = [];
     }
-}
+
 
 //addProduct(product): Adds a product to the inventory
 
 addProduct(product) {
     this.inventory.push(product);
+    }
+
+//getInventoryValue(): Returns the total value of all products in the inventory
+
+getInventoryValue() {
+    return this.inventory.reduce((total, product.name === name)) || null;
+    }
 }
