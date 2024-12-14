@@ -1,4 +1,4 @@
-//Part1 Settup
+//Part1-2 Settup
 
 class ProductProperties {
     constructor(name, price, quantity) {
@@ -27,8 +27,8 @@ class ProductProperties {
     }
 
 }
-
-//Part 2
+//Part 3
+//Create Subclass
 
 class PerishableProductProperties extends ProductProperties {
     constructor(name, price, quantity, expirationDate) {
@@ -42,7 +42,7 @@ class PerishableProductProperties extends ProductProperties {
     }
 }
 
-
+//Part4
 //Create a Store ClassProperties inventory (array)
 
 class Store {
@@ -70,3 +70,12 @@ findProductByName(name) {
     return this.inventory.find(product => product.name === name) || null;
     }
 }
+
+//Part 5
+//Testing!!!!!
+
+const product1 = new ProductProperties('Apple', 2.50, 50);
+const product2 = new ProductProperties('Banana', 1.25, 45);
+const product3 = new PerishableProductProperties('Milk', 3.75, 15, '2025-01-05');
+const product4 = new PerishableProductProperties('Yogurt', 2.50, 25, '2025-01-15');
+const product5 = new ProductProperties('Soda', 3.25, 50);
