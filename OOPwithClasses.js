@@ -51,3 +51,8 @@ class Store {
     }
 }
 
+//addProduct(product): Adds a product to the inventory
+
+addProduct(product) {
+    this.inventory.push(product);
+}
