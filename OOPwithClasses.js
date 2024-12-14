@@ -106,3 +106,5 @@ console.log('Total Inventory Value before Discount: $' + store.getInventoryValue
 ProductProperties.applyDiscount(store.inventory, 0.15);
 
 //Testing getTotalValue(): Returns the total value of the product in stock (price * quantity) AFTER Discount
+console.log('Total Inventory Value after 15% Discount: $' + store.getInventoryValue().toFixed(2));
+
