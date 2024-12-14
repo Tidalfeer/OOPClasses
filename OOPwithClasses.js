@@ -97,5 +97,8 @@ store.addProduct(product4);
 store.addProduct(product5);
 
 
-//testing getTotalValue(): Returns the total value of the product in stock (price * quantity)
+//Testing getTotalValue(): Returns the total value of the product in stock (price * quantity)
 console.log('Total Inventory Value before Discount: $' + store.getInventoryValue().toFixed(2));
+
+//Testing applyDiscount(products, discount)
+ProductProperties.applyDiscount(store.inventory, 0.15);
