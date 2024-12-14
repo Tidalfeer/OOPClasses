@@ -74,8 +74,16 @@ findProductByName(name) {
 //Part 5
 //Testing!!!!!
 
+
+//Inventory
+
 const product1 = new ProductProperties('Apple', 2.50, 50);
 const product2 = new ProductProperties('Banana', 1.25, 45);
 const product3 = new PerishableProductProperties('Milk', 3.75, 15, '2025-01-05');
 const product4 = new PerishableProductProperties('Yogurt', 2.50, 25, '2025-01-15');
 const product5 = new ProductProperties('Soda', 3.25, 50);
+
+//New Store (part 4)
+
+const store = new Store();
+
