@@ -60,6 +60,13 @@ addProduct(product) {
 //getInventoryValue(): Returns the total value of all products in the inventory
 
 getInventoryValue() {
-    return this.inventory.reduce((total, product.name === name)) || null;
+    return this.inventory.reduce((total, product) => total + product.getInventoryValue(), 0);
+    }
+
+
+//findProductByName(name): Finds a product by its name and returns it, or returns null if not found
+
+findProductByName(name) {
+    return this.inventory.find(product => product.name === name) || null;
     }
 }
