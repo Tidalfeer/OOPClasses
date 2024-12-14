@@ -108,3 +108,11 @@ ProductProperties.applyDiscount(store.inventory, 0.15);
 //Testing getTotalValue(): Returns the total value of the product in stock (price * quantity) AFTER Discount
 console.log('Total Inventory Value after 15% Discount: $' + store.getInventoryValue().toFixed(2));
 
+
+//Testing findProductByName(name): Finds a product by its name and returns it, or returns null if not found
+const searchedProduct = store.findProductByName('Milk');
+if (searchedProduct) {
+  console.log('Found Product: ' + searchedProduct.toString());
+} else {
+  console.log('Product not found');
+}
